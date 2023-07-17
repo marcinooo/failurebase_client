@@ -1,0 +1,14 @@
+.error-code {
+  font-size: 14rem;
+  font-weight: lighter;
+  margin-bottom: 18px;
+}
+
+.reaction {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.info {
+  font-size: 2rem;
+}

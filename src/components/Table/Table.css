@@ -1,0 +1,90 @@
+.fb-table {
+  margin: 10px;
+  border: 1px solid #d4d4d4;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  overflow: auto;
+}
+
+td, th {
+  padding: 0.4rem 0.4rem;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+thead {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+thead > td, th {
+  padding: 1.2rem 0.4rem;
+}
+
+tfoot {
+  border-top: 1px solid #d4d4d4;
+}
+
+tfoot th {
+  padding: 1.2rem 0.4rem;
+  border-bottom: 0px;
+  font-weight: normal;
+}
+
+.foot-left {
+  float: left;
+}
+
+.foot-right {
+  float: right;
+}
+
+.sort-button {
+  background-color: #ffffff;
+  border: none;
+  color: white;
+  padding: 4px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  }
+
+.paginate-button {
+  background-color: #ffffff;
+  border: none;
+  color: white;
+  padding: 4px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.paginate-button:hover {
+  background-color: #e9e9e9;
+}
+
+.paginate-button:active {
+  background-color: #dadada;
+}
+
+.rotated-up {
+  transform: rotate(0deg);
+  transition: .3s ease-in-out;
+}
+
+.rotated-down {
+  transform: rotate(180deg);
+  transition: .3s ease-in-out;
+}
+
+.sort-button:hover {
+  background-color: #f0f0f0;
+}
+
+.sort-button:active {
+  background-color: #dddddd;
+}
+
+.table-selected-items-clear:hover {
+  cursor: pointer;
+}

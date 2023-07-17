@@ -1,0 +1,28 @@
+.indeterminate-progress-bar {
+    background-color: #d1d5db;
+    border-radius: 9999px;
+    height: 0.3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.indeterminate-progress-bar-progress {
+    background-color: rgb(8, 126, 164);
+    border-radius: 9999px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    width: 50%;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: indeterminate-progress-bar;
+}
+
+@keyframes indeterminate-progress-bar {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 100%;
+    }
+}
