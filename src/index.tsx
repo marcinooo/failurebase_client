@@ -1,11 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, HashRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
-
-const sameOrigin = process.env.REACT_APP_SAME_ORIGIN === 'true'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,9 +11,7 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    {sameOrigin
-      ? <HashRouter><App /></HashRouter>
-      : <BrowserRouter><App /></BrowserRouter>}
+    <BrowserRouter><App /></BrowserRouter>
   </React.StrictMode>
 )
 

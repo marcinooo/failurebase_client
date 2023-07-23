@@ -1,4 +1,10 @@
 
+declare global {
+  interface Window {
+    API_URL: any
+  }
+}
+
 const request = async (
   url: string,
   query: string = '',
@@ -7,7 +13,8 @@ const request = async (
   if (process.env.REACT_APP_BASE_URL === undefined) {
     console.warn('BASE_URL is not configured')
   }
-  let requestUrl = String(process.env.REACT_APP_BASE_URL) + url
+  const baseUrl = process.env.REACT_APP_BASE_URL ?? window.API_URL
+  let requestUrl = String(baseUrl) + url
   if (query.length !== 0) {
     requestUrl += '?' + query
   }

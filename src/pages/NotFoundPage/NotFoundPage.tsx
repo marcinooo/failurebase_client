@@ -4,7 +4,7 @@ import './NotFoundPage.css'
 const NotFoundPage: React.FC = () => (
   <div>
     <div className="is-center">
-      <p className="error-code">404</p>
+      <p className="error-code text-primary">404</p>
     </div>
     <div className="is-center">
       <p className="reaction">Ooops!!</p>
